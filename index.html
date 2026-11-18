@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Ivan. | Portfolio</title>
+</head>
+
+<!-- Loading Screen -->
+<div id="loader" class="fixed inset-0 z-9999 flex items-center justify-center bg-[#FDF2E9]">
+    <div class="text-center">
+
+        <h1 class="text-4xl font-bold text-black">Ivan<span class="text-[#A388EE]">.</span></h1>
+        <p class="mt-3 text-sm text-gray-500">
+            Loading Portfolio...
+        </p>
+        <div class="w-60 h-2 mt-2 bg-gray-300 rounded-full overflow-hidden">
+            <div class="loader-bar h-full bg-[#A388EE] rounded-full"></div>
+        </div>
+
+    </div>
+</div>
+
+<body class="font-space">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 px-4 w-full z-50 md:px-25 py-4 bg-transparent">
+        <nav class="container relative mx-auto flex justify-between items-baseline border-2 border-black rounded-md px-4 py-2 bg-white">
+            
+            <h1 class="text-lg font-medium">Ivan.</h1>
+
+            <ul id="nav-menu" class="hidden md:flex space-x-8 ">
+                <li><a href="#" class="text-lg font-medium hover:underline hover:decoration-2 hover:underline-offset-5" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Home</a></li>
+                <li><a href="#About" class="text-lg font-medium hover:underline hover:decoration-2 hover:underline-offset-5">About</a></li>
+                <li><a href="#Experience" class="text-lg font-medium hover:underline hover:decoration-2 hover:underline-offset-5">Experience</a></li>
+                <li><a href="#MyCraft" class="text-lg font-medium hover:underline hover:decoration-2 hover:underline-offset-5">My Craft</a></li>
+                <li><a href="#Contact" class="text-lg font-medium hover:underline hover:decoration-2 hover:underline-offset-5">Contact</a></li>
+            </ul>
+
+            <button id="menu-toggle" class="md:hidden flex self-center">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <ul id="mobile-menu" class="hidden absolute top-full left-0 right-0 mt-2 flex-col space-y-4 bg-white border-2 border-black rounded-md p-4 shadow-lg md:hidden">
+                <li><a href="#" class="block text-lg font-medium" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Home</a></li>
+                <li><a href="#About" class="block text-lg font-medium">About</a></li>
+                <li><a href="#Experience" class="block text-lg font-medium">Experience</a></li>
+                <li><a href="#MyCraft" class="block text-lg font-medium">My Craft</a></li>
+                <li><a href="#Contact" class="block text-lg font-medium">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    
+    <!-- Spacer -->
+    <div class="bg-[#FDF2E9] h-20 md:h-4"></div>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen px-6 py-8 flex items-center bg-[#FDF2E9]">
+        <div class="container mx-auto max-w-5xl">
+            <div class="flex flex-col lg:flex-row items-center gap-10">
+
+                <div class="w-full flex justify-center fade-in">
+                    <div class="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80">
+                        <div class="absolute inset-0 bg-[#4ECDC4] border-2 border-black rounded-lg rotate-[-18deg]"></div>
+                        <img src="images/Ivan.jpg" alt="My Picture" class="relative w-full h-full object-cover rounded-lg border-2 border-black">
+                    </div>
+                </div>
+
+                <div class="w-full text-center lg:text-left">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 fade-in delay-1">
+                        James Ivan Sapatua
+                    </h1>
+                    <p class="text-base max-w-lg mx-auto lg:mx-0 mb-4 fade-in delay-2">
+                        I enjoy creating designs and editing videos. I dream to
+                        become a developer to be able combine technology
+                        and creativity to turn ideas into meaningful and
+                        wonderful experience for people.
+                    </p>
+                    <p class="text-base max-w-lg mx-auto lg:mx-0 mb-6 fade-in delay-3">
+                        Currently taking the Bachelor of Science in
+                        Information Technology at Cavite State University
+                        Silang Campus.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start fade-in delay-4">
+                        <a href="images/ivan-resume.pdf" target="_blank" class="bg-[#45B7D1] border-2 border-black rounded-md px-7 py-3 w-full sm:w-50 flex items-center justify-center gap-2 font-medium text-base hover:bg-white">
+                            <i data-lucide="arrow-down-to-line"></i>
+                                Download CV
+                        </a>
+                        <a href="#Contact" class="bg-[#FFE66D] border-2 border-black rounded-md px-7 py-3 w-full sm:w-50 flex items-center justify-center gap-2 font-medium text-base hover:bg-white">
+                            <i data-lucide="user-round-check"></i>
+                                Hire Me
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="About" class="px-6 py-8 bg-white border-t-2 border-black">
+        <div class="container mx-auto max-w-4xl">
+            
+            <div class="text-center mb-8 fade-in">
+                <h2 class="text-5xl font-bold mb-2">About Me</h2>
+                <p class="text-lg font-medium">A little glimpse into who I am.</p>
+            </div>
+
+            <div class="mb-8 text-base text-justify">
+                <p class="mb-4 fade-in delay-1">
+                    Hello! I'm a passionate BSIT Student who enjoys designing
+                    creative visuals and editing videos. My goal as a student
+                    is to improve continuously my skills and to learn something
+                    new about technology and to be able to develop creative
+                    and amazing projects.
+                </p>
+                <p class="fade-in delay-2">
+                    My curiosity and interest in technology started when I was
+                    grade 10, I have this one subject that teaches about
+                    computer and I found that this subject is enjoyable and
+                    interesting to me even every activity. That feeling led me
+                    to choose ICT in senior high school and I still keep pursuing
+                    this path in college. As a person that love creating designs,
+                    I keep learning to be able to turn every creative idea to
+                    something interactive and user-friendly for people.
+                </p>
+            </div>
+
+            <div class="border-2 border-black rounded-lg p-4 grid grid-cols-1 sm:grid-cols-[180px_minmax(0,1fr)] md:grid-cols-[220px_minmax(0,1fr)] lg:grid-cols-[260px_minmax(0,1fr)] gap-4 bg-[#FDF2E9] fade-in delay-3">
+                <div class="relative w-44 h-44 mx-auto sm:w-full sm:h-full sm:mx-0 sm:min-h-0 bg-[#ffffff] border-2 border-black rounded-lg p-2">
+                    <img src="images/James.jpg" alt="My Picture" class="w-full h-full aspect-square object-cover rounded-md border-2 border-black">
+                </div>
+                <div class="w-full sm:flex-1 min-w-0 grid grid-cols-2 gap-2 content-center text-base font-medium text-center [&>div]:flex [&>div]:items-center [&>div]:justify-center">
+                    <div class="bg-[#A388EE] border-2 border-black rounded-md p-3">James Ivan P. Sapatua</div>
+                    <div class="bg-[#4ECDC4] border-2 border-black rounded-md p-3">Male</div>
+                    <div class="bg-[#FFE66D] border-2 border-black rounded-md p-3 col-span-2">Dasmariñas City, Cavite, Philippines</div>
+                    <div class="bg-[#F7A072] border-2 border-black rounded-md p-3">19 Years Old</div>
+                    <div class="bg-[#FF6B6B] border-2 border-black rounded-md p-3">Single</div>
+                    <div class="bg-[#45B7D1] border-2 border-black rounded-md p-3">College Student</div>
+                    <div class="bg-[#45D194] border-2 border-black rounded-md p-3">BSIT - 2nd Year</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="Experience" class="px-6 py-8 bg-[#FDF2E9] border-t-2 border-black">
+        <div class="container mx-auto max-w-4xl flex flex-col gap-4">
+            
+            <div class="text-center mb-8 fade-in">
+                <h2 class="text-5xl font-bold mb-2">My Journey</h2>
+                <p class="text-lg font-medium">The process of learning and discovering my potential.</p>
+            </div>
+            
+            <div class="border-2 border-black rounded-lg p-3 mb-2 bg-white fade-in delay-1">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                        <span class="w-4 h-4 bg-[#FF6B6B] border-2 border-black rounded-full"></span>
+                        <h3 class="font-bold text-lg">College</h3>
+                    </div>
+                    <span class="font-bold text-lg">2025 - 2029</span>
+                </div>
+                <p class="text-base mt-2 text-justify">
+                    Currently studying Bachelor of Science in Information Technology
+                    at Cavite State University Silang Campus. I am currently in my 
+                    2nd year and I am learning more about programming, web development, 
+                    and other IT-related subjects.
+                </p>
+            </div>
+            
+            <div class="border-2 border-black rounded-lg p-3 mb-2 bg-white fade-in delay-2">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                        <span class="w-4 h-4 bg-[#F7A072] border-2 border-black rounded-full"></span>
+                        <h3 class="font-bold text-lg">Senior High School</h3>
+                    </div>
+                    <span class="font-bold text-lg">2023 - 2025</span>
+                </div>
+                <p class="text-base mt-2 text-justify">
+                    I studied Senior High School at Philippine Christian University 
+                    Dasmariñas Campus. I took the Information and Communications Technology 
+                    (ICT) as my strand. I learned many things about programming and 
+                    web development. During my OJT at our barangay hall, I experienced 
+                    real-life work and I learned how to communicate with people and 
+                    provide services.
+                </p>
+                <span class="inline-flex items-center gap-1 mt-2 text-xs font-bold border-2 border-black rounded-md px-2 py-1 bg-[#F7A072]">
+                    <i data-lucide="award" class="w-4 h-4"></i>
+                        With Honor
+                </span>
+            </div>
+            
+            <div class="border-2 border-black rounded-lg p-3 mb-2 bg-white fade-in delay-3">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                        <span class="w-4 h-4 bg-[#FFE66D] border-2 border-black rounded-full"></span>
+                        <h3 class="font-bold text-lg">Junior High School</h3>
+                    </div>
+                    <span class="font-bold text-lg">2019 - 2023</span>
+                </div>
+                <p class="text-base mt-2 text-justify">
+                    I studied Junior High School at Paliparan III National High School. 
+                    During these times, I started to develop my interest in computers and technology. 
+                    I learned about basic parts of computers, troubleshooting, and networking.
+                </p>
+                <span class="inline-flex items-center gap-1 mt-2 text-xs font-bold border-2 border-black rounded-md px-2 py-1 bg-[#FFE66D]">
+                    <i data-lucide="award" class="w-4 h-4"></i>
+                        With Honor
+                </span>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- My Craft Section -->
+    <section id="MyCraft" class="px-6 py-8 bg-white border-t-2 border-black">
+        <div class="container mx-auto max-w-4xl">
+            
+            <div class="text-center mb-8 fade-in">
+                <h2 class="text-5xl font-bold mb-2">My Creative Works</h2>
+                <p class="text-lg font-medium">Every project tells a story of creativity, learning, and growth.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                
+                <div class="bg-[#FDF2E9] border-2 border-black rounded-lg p-3 w-full md:flex-1 min-w-0 min-h-0 lg:min-h-70 flex flex-col fade-in delay-1">
+                    <h1 class="text-lg font-bold text-center mb-2">Drawing</h1>
+                    <p class="text-base text-justify mb-4 lg:flex-1">
+                        Since I was a kid, I always do drawing and it became my hobby. 
+                        I have created various drawings and it helps me to be more creative 
+                        and skilled when designing.
+                    </p>
+                    <div class="flex justify-center mt-auto">
+                        <a href="https://drive.google.com/drive/folders/1UZ2iqNlo6sllVHKRwSRwL0Iloc5yJBxf?usp=sharing" target="_blank" class="w-full flex justify-center items-center gap-1 border-2 border-black rounded-md bg-[#45D194] py-1 px-3 font-medium text-base hover:bg-white">
+                            <i data-lucide="eye" class="w-6 h-6"></i>
+                                View
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-[#FDF2E9] border-2 border-black rounded-lg p-3 w-full md:flex-1 min-w-0 min-h-0 lg:min-h-70 flex flex-col fade-in delay-2">
+                    <h1 class="text-lg font-bold text-center mb-2">Video Edit</h1>
+                    <p class="text-base text-justify mb-4 lg:flex-1">
+                        I started editing because of the videos I watch created by other people. 
+                        They are very cool that I feel inspired to create my own. Sometimes, 
+                        I record my own videos when I travel and edit them at home for my memories.
+                    </p>
+                    <div class="flex justify-center mt-auto">
+                        <a href="https://drive.google.com/drive/folders/1BMiJ4mJbEop9DAm6Ungb_dyW8Bb4Ot4A?usp=sharing" target="_blank" class="w-full flex justify-center items-center gap-1 border-2 border-black rounded-md bg-[#45B7D1] py-1 px-3 font-medium text-base hover:bg-white">
+                            <i data-lucide="eye" class="w-6 h-6"></i>
+                                View
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-[#FDF2E9] border-2 border-black rounded-lg p-3 w-full md:flex-1 min-w-0 min-h-0 lg:min-h-70 flex flex-col fade-in delay-3">
+                    <h1 class="text-lg font-bold text-center mb-2">Graphic Design</h1>
+                    <p class="text-base text-justify mb-4 lg:flex-1">
+                        I enjoy creating visually appealing designs and have 
+                        experience using various design applications. I keep learning 
+                        to be able to bring my creativity to life.
+                    </p>
+                    <div class="flex justify-center mt-auto">
+                        <a href="https://drive.google.com/drive/folders/1pmG2zGIjkzNE9n7e6bB8EdO2dT_-YMSH?usp=sharing" target="_blank" class="w-full flex justify-center items-center gap-1 border-2 border-black rounded-md bg-[#A388EE] py-1 px-3 font-medium text-base hover:bg-white">
+                            <i data-lucide="eye" class="w-6 h-6"></i>
+                                View
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>    
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact" class="px-6 py-8 bg-[#FDF2E9] border-t-2 border-black ">
+        <div class="container mx-auto max-w-4xl">
+            
+            <div class="text-center mb-8 fade-in">
+                <h2 class="text-5xl font-bold mb-2">Get In Touch</h2>
+                <p class="text-lg font-medium">Every great project starts with a conversation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="flex flex-col gap-4">
+                    
+                    <div class="flex items-center gap-3 border-2 border-black rounded-lg p-2 bg-white fade-in delay-1">
+                        <div class="bg-[#45B7D1] border-2 border-black rounded-md p-2">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-base font-medium text-[#D0C2AD]">Email:</p>
+                            <p class="text-base font-medium">jamesivan1250@email.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 border-2 border-black rounded-lg p-2 bg-white fade-in delay-1">
+                        <div class="bg-[#F7A072] border-2 border-black rounded-md p-2">
+                            <i data-lucide="phone" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-base font-medium text-[#D0C2AD]">Phone Number:</p>
+                            <p class="text-base font-medium">+63-993-256-8529</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 border-2 border-black rounded-lg p-2 bg-white fade-in delay-1">
+                        <div class="bg-[#45D194] border-2 border-black rounded-md p-2">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-base font-medium text-[#D0C2AD]">Location:</p>
+                            <p class="text-base font-medium">Dasmariñas City, Cavite, Philippines</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-1 flex flex-col items-center md:items-start fade-in delay-2">
+                        <h3 class="text-base font-bold text-center md:text-left mb-1">Find Me On:</h3>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/james-ivan-sapatua" target="_blank" class="bg-[#FF6B6B] border-2 border-black rounded-md p-2 hover:bg-white">
+                                <img src="images/github.svg" alt="Github" class="w-6 h-6">
+                            </a>
+                            <a href="https://www.instagram.com/kupsvan_25/" target="_blank" class="bg-[#FFE66D] border-2 border-black rounded-md p-2 hover:bg-white">
+                                <img src="images/ig.svg" alt="Instagram" class="w-6 h-6">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <form id="contactform" class="border-2 border-black rounded-lg p-4 bg-white fade-in delay-3">
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <label class="block text-base font-bold mb-1">Your Name</label>
+                            <input type="text" name="name" id="name" placeholder="Your Name" required class="w-full bg-[#C8BDAD] rounded-md border-2 border-black px-3 py-2 focus:outline-none placeholder:text-white placeholder:text-sm text-base font-medium">
+                        </div>
+                        <div>
+                            <label class="block text-base font-bold mb-1">Your Email</label>
+                            <input type="email" name="email" id="email" placeholder="Your Email" required class="w-full bg-[#C8BDAD] rounded-md border-2 border-black px-3 py-2 focus:outline-none placeholder:text-white placeholder:text-sm text-base font-medium">
+                        </div>
+                        <div>
+                            <label class="block text-base font-bold mb-1">Subject</label>
+                            <input type="text" name="subject" id="subject" placeholder="What's this about?" required class="w-full bg-[#C8BDAD] rounded-md border-2 border-black px-3 py-2 focus:outline-none placeholder:text-white placeholder:text-sm text-base font-medium">
+                        </div>
+                        <div>
+                            <label class="block text-base font-bold mb-1">Your Message</label>
+                            <textarea rows="4" name="message" id="message" placeholder="Your Message" required class="w-full h-36 bg-[#C8BDAD] rounded-md border-2 border-black px-3 py-2 focus:outline-none placeholder:text-white placeholder:text-sm text-base font-medium"></textarea>
+                        </div>
+                        <button type="submit" id="sendbtn" class="w-full flex justify-center items-center gap-1 border-2 border-black rounded-md bg-[#A388EE] py-2 px-3 font-medium text-base hover:bg-white">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                                Send Message
+                        </button>
+                        <p id="formstatus" role="status" aria-live="polite" class="text-center text-sm"></p>
+                    </div>
+                </form>
+            
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer class="py-6 px-4 bg-white border-t-2 border-black">
+        <div class="container mx-auto max-w-4xl text-center">
+            <p class="text-sm font-medium">© 2026 James Ivan Sapatua. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script src="script.js"></script>
+</body>
+</html>
