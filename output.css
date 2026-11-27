@@ -365,6 +365,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-row {
+    flex-direction: row;
+  }
   .content-center {
     align-content: center;
   }
@@ -382,6 +385,9 @@
   }
   .gap-1 {
     gap: var(--spacing);
+  }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -473,6 +479,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .object-contain {
+    object-fit: contain;
+  }
   .object-cover {
     object-fit: cover;
   }
@@ -517,6 +526,12 @@
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
   }
   .text-center {
     text-align: center;
@@ -599,6 +614,12 @@
     color: var(--color-white);
   }
   @media (hover: hover) {
+    .hover\:bg-\[\#45D194\]:hover {
+      background-color: #45D194;
+    }
+    .hover\:bg-\[\#A388EE\]:hover {
+      background-color: #A388EE;
+    }
     .hover\:bg-white:hover {
       background-color: var(--color-white);
     }
@@ -699,6 +720,9 @@
     }
     .lg\:flex-1 {
       flex: 1;
+    }
+    .lg\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
     .lg\:grid-cols-\[260px_minmax\(0\,1fr\)\] {
       grid-template-columns: 260px minmax(0,1fr);
